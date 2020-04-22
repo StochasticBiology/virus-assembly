@@ -124,12 +124,7 @@ double Protein::CalcPot(Protein Partner, double BOX, EnergyParams P)
 {
   int counter1, counter2;
   double energy;
-  double buf;
-  double theta;
-  int onebonded = 0;
   double bufdist;
-  Vector V1, V2;
-  double vv;
   double apexdist;
 
   // compute apex distance cutoff and return zero if we're out of range
@@ -343,7 +338,7 @@ void OutputForMathematica(Protein *Proteins, int POLYNUM, char *label, double BO
 // suspect this is deprecated -- old function for outputting simulation snapshots in Gnuplot-friendly format
 void OutputForGnuplot(Protein *Proteins, int POLYNUM, char *label, double BOX)
 {
-  int i, j, k;
+  int i, j;
   FILE *fp1;
   char s1[400];
   Vector t;
@@ -401,8 +396,6 @@ int MaxClusSizeNew(double *Energies, int POLYNUM, int *sizes)
   int *Clusters;
   int c1, c2;
   int *BondNeighbours;
-  int i;
-  int count, tcount;
 
   // allocate memory for structures we need
   BondNeighbours = (int *)malloc(sizeof(int)*POLYNUM*POLYNUM);
