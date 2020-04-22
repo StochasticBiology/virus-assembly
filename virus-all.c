@@ -340,6 +340,7 @@ void OutputForMathematica(Protein *Proteins, int POLYNUM, char *label, double BO
   printf("Output: %i proteins, %i crowders\n", prot, crowd);
 }
 
+// suspect this is deprecated -- old function for outputting simulation snapshots in Gnuplot-friendly format
 void OutputForGnuplot(Protein *Proteins, int POLYNUM, char *label, double BOX)
 {
   int i, j, k;
