@@ -1,3 +1,5 @@
+// definition of physical structures and functions for virus capsid assembly
+
 #ifndef __VIRUS_C_
 
 #define __VIRUS_C_
@@ -432,7 +434,7 @@ int MaxClusSizeNew(double *Energies, int POLYNUM, int *sizes)
   for(c1 = 0; c1 < POLYNUM; c1++)
     {
       NumInCluster = 0;
-      // recursively count this size of the cluster that this agent is in, unless this cluster has already been counted XXX?
+      // recursively count this size of the cluster that this agent is in, unless this cluster has already been counted
       NumInCluster = ClusterCount(BondNeighbours, AlreadyCounted, c1, NumInCluster, POLYNUM);
       // record this size of this cluster in Clusters
       Clusters[c1] = NumInCluster;
