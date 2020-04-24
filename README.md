@@ -18,3 +18,4 @@ run.sh -- bash script compiling the code and running a set of example physical e
 get-stats.sh -- bash script summarising simulation outputs
 
 virus-visualise.nb -- Mathematica notebook allowing visualisation of snapshots of simulation output
+plot-expts.sh -- Gnuplot script plotting assembly yields with different parameters for the experiments in run.sh
