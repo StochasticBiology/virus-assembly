@@ -6,6 +6,8 @@ set xrange [0.135: 0.235]
 xoff = 0.002
 sxoff = 0.0005
 
+set xlabel "T"
+set ylabel "Capsid yield"
 
 # plot capsid yield with temperature and crowding agents
 set origin 0,0.66
